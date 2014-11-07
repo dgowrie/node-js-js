@@ -21,7 +21,7 @@ router.get('/', function(req, res) {
  // In this case, to keep things simple, we're going to do everything in 
  // the index router.
 
-// Form.html route
+// Form.html route example for static file 
 router.get('/form', function(req, res) {
     fs.readFile('./public/form.html', function(error, content) {
         if (error) {
@@ -33,6 +33,12 @@ router.get('/form', function(req, res) {
             res.end(content, 'utf-8');
         }
     });
+});
+
+
+// Hello World route example with Jade view
+router.get('/helloworld', function(req, res) {
+	res.render( 'helloworld', { title: 'Hello, World!' } );
 });
 
 module.exports = router;
