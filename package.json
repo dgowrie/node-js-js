@@ -1,0 +1,11 @@
+{
+  "name": "node-js-js",
+  "version": "0.0.0",
+  "description": "demo test nodejs",
+  "author": "David Gowrie",
+  "license": "Apache",
+  "private": true,
+  "devDependencies": {
+    "express": "^4.10.1"
+  }
+}
