@@ -7,6 +7,7 @@ var express = require('express'),
 
     routes = require('./routes/index'),
     users = require('./routes/users'),
+    User = require('./models/User.js'),
 
     app = express();
 
