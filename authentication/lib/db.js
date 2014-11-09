@@ -9,7 +9,7 @@ module.exports.Schema = Schema;
 // Connect to cloud database
 var username = 'admin',
 	password = 'admin',
-	address = 'ds051960.mongolab.com:51960/nockmarket';
+	address = '@ds051960.mongolab.com:51960/nockmarket';
 
 connect();
 
