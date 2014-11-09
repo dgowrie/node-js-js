@@ -11,11 +11,11 @@ var UserSchema = new db.Schema({
 var MyUser = db.mongoose.model('User', UserSchema);
 
 // Exports
-module.export.addUser = addUser;
+module.exports.addUser = addUser;
 
 // Add user to database
 function addUser(username, password, callback) {
-	var instance = new MyUser;
+	var instance = new MyUser();
 	instance.username = username;
 	instance.password = password;
 	instance.save(function (err) {

@@ -1,10 +1,10 @@
 // database module
 
 var mongoose = require('mongoose'),
-	Scheme = mongoose.Schema;
+	Schema = mongoose.Schema;
 
 module.exports.mongoose = mongoose;
-module.exports.Scheme = Schema;
+module.exports.Schema = Schema;
 
 // Connect to cloud database
 var username = 'admin',

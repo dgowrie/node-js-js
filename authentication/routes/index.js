@@ -2,7 +2,11 @@ var express = require('express'),
 	router = express.Router(),
 
     // temp file system reading
-    fs = require('fs');
+    fs = require('fs'),
+
+    // User module
+    User = require('../models/User.js');
+
 
 /* GET home page. */
 router.get('/', function(req, res) {
