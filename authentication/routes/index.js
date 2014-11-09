@@ -35,6 +35,17 @@ router.get('/form', function(req, res) {
     });
 });
 
+// Submit post via signup button on form.html
+router.post('/signup', function(req, res) {
+	var username = req.body.username,
+		password = req.body.password;
+
+	User.addUser(username, password, function(err, user) {
+		if (err) throw err;
+		res.redirect('/form');
+	});
+});
+
 
 // Hello World route example with Jade view
 router.get('/helloworld', function(req, res) {
